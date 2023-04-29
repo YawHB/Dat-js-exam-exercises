@@ -9,8 +9,9 @@ async function start() {
 }
 
 async function getData() {
-  const response = await fetch("users.json");
-  const data = await response.json();
+  const response = await fetch("users.json"); //This is how to fetch from another file on the same level
+  console.log(response);
+  const data = await response.json(); //reads the response and returns a JavaScript object.
   return data;
 }
 
