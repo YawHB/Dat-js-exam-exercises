@@ -1,0 +1,10 @@
+<!-- Del 1: Indlæsning af JSON-fil
+I denne del skal du oprette en funktion, der indlæser JSON-filen users.json ved hjælp af fetch-API'et. Derefter skal du konvertere JSON-responsen til et JavaScript-objekt og gemme brugerlisten i en variabel. Funktionen skal håndtere asynkroniteten ved at bruge promises.
+
+Del 2: Visning af brugerlisten
+I denne del skal du oprette en funktion, der tager imod brugerlisten som argument og viser den på websiden. Funktionen skal oprette listeelementer (<li>) for hver bruger og indstille teksten til at indeholde brugerens navn og om de er aktive eller ej. Brugerlisten skal vises i en usorteret liste (<ul>) med id'et "user-list".
+
+Del 3: Filtrering af brugerlisten
+I denne del skal du oprette en funktion, der tager imod brugerlisten som argument og filtrerer den for at finde alle admin-brugere. Funktionen skal oprette en ny liste med kun admin-brugere og logge den i konsollen. Du kan bruge array-metoden filter() til dette formål.
+
+Ved at følge disse trin vil du kunne indlæse JSON-filen med brugerdata, vise brugerlisten på websiden og filtrere listen for at finde admin-brugere. Du -->
