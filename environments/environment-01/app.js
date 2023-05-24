@@ -5,7 +5,7 @@ window.addEventListener("load", init);
 //************************* EXAMPLE 1 for of loop ***************************************
 
 function init() {
-    example1();
+    // example1();
     // example2();
 }
 async function example1() {
