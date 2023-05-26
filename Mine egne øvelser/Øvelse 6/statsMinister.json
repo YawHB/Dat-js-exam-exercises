@@ -1,0 +1,27 @@
+[
+    {
+        "navn": "Helle Thorning-Schmidt",
+        "statsministerPeriode": "2011-2015",
+        "isRed": true
+    },
+    {
+        "navn": "Lars Løkke Rasmussen",
+        "statsministerPeriode": "2009-2011, 2015-2019",
+        "isRed": false
+    },
+    {
+        "navn": "Anders Fogh Rasmussen",
+        "statsministerPeriode": "2001-2009",
+        "isRed": false
+    },
+    {
+        "navn": "Poul Nyrup Rasmussen",
+        "statsministerPeriode": "1993-2001",
+        "isRed": true
+    },
+    {
+        "navn": "Poul Schlüter",
+        "statsministerPeriode": "1982-1993",
+        "isRed": false
+    }
+]
