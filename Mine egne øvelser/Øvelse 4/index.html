@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Environment-02</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="shortcut icon" href="#" type="image/x-icon" />
+    </head>
+
+    <body>
+        <h1>Øvelse 4 - books</h1>
+        <hr />
+        <h2>Books</h2>
+
+        <main>
+            <div id="form-container">
+                <h2>Form</h2>
+                <form id="create-form" action="">
+                    <label for="title">Title</label>
+                    <input type="text" id="book-title" name="title" />
+                    <label for="genre">Genre</label>
+                    <select name="genre" id="genre">
+                        <option value="fiction">Fiction</option>
+                        <option value="dystopian">Dystopian</option>
+                        <option value="romance">Romance</option>
+                        <option value="fantasy">Fantasy</option>
+                    </select>
+                    <label for="published">Age</label>
+                    <input type="number" id="published" name="published" />
+                    <button>Create New</button>
+                </form>
+            </div>
+            <div id="list-container">
+                <h2>List</h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Genre</th>
+                            <th>Published</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+
+        <script src="app.js"></script>
+        <!-- <script src="script2.js"></script> -->
+    </body>
+</html>
