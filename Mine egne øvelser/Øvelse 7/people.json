@@ -1,0 +1,17 @@
+[
+    {
+        "name": "David Brown",
+        "age": 28,
+        "gender": "male"
+    },
+    {
+        "name": "Sarah Wilson",
+        "age": 42,
+        "gender": "female"
+    },
+    {
+        "name": "Matthew Taylor",
+        "age": 33,
+        "gender": "male"
+    }
+]
