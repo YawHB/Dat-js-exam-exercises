@@ -1,60 +1,61 @@
-window.addEventListener("load", start);
+// "use strict"
 
-const ministre = [];
+// window.addEventListener("load", start);
 
-async function start() {
-    const data = await fetchData();
-    data.forEach(pushToArray);
-    console.log(ministre);
-    countRoles(ministre);
+// const ministre = [];
 
-    const namedSorted = sortName(ministre);
-    showPersons(namedSorted);
-}
+// async function start() {
+//     const data = await fetchData();
+//     data.forEach(pushToArray);
+//     console.log(ministre);
+//     countRoles(ministre);
 
-async function fetchData() {
-    const res = await fetch("./statsMinister.json");
-    const data = await res.json();
-    return data;
-}
+//     const namedSorted = sortName(ministre);
+//     showPersons(namedSorted);
+// }
 
-function pushToArray(person) {
-    ministre.push(person);
-}
+// async function fetchData() {
+//     const res = await fetch("./statsMinister.json");
+//     const data = await res.json();
+//     return data;
+// }
 
-function showPersons(persons) {
-    for (const person of persons) {
-        displayPerson(person);
-    }
-}
+// function pushToArray(person) {
+//     ministre.push(person);
+// }
 
-function displayPerson(person) {
-    const html = /*html*/ `
+// function showPersons(persons) {
+//     for (const person of persons) {
+//         displayPerson(person);
+//     }
+// }
 
-<li>${person.name}</li>
+// function displayPerson(person) {
+//     const html = /*html*/ `
 
+// <li>${person.name}</li>
 
-    `;
-    document
-        .querySelector("#statsministreList")
-        .insertAdjacentHTML("beforeend", html);
-}
+//     `;
+//     document
+//         .querySelector("#statsministreList")
+//         .insertAdjacentHTML("beforeend", html);
+// }
 
-function sortName(names) {
-    return names.sort((a, b) => a.name.localeCompare(b.name));
-}
+// function sortName(names) {
+//     return names.sort((a, b) => a.name.localeCompare(b.name));
+// }
 
-let red = 0;
-let blue = 0;
+// let red = 0;
+// let blue = 0;
 
-function countRoles(array) {
-    for (const person of array) {
-        if (person.isRed) {
-            red++;
-        } else {
-            blue++;
-        }
-    }
-    document.querySelector("#blueCount").textContent = blue;
-    document.querySelector("#redCount").textContent = red;
-}
+// function countRoles(array) {
+//     for (const person of array) {
+//         if (person.isRed) {
+//             red++;
+//         } else {
+//             blue++;
+//         }
+//     }
+//     document.querySelector("#blueCount").textContent = blue;
+//     document.querySelector("#redCount").textContent = red;
+// }
