@@ -3,18 +3,17 @@ import { teachers } from "./teachers.js";
 window.addEventListener("load", start);
 
 function start() {
-    sortName("name");
+    sortName();
     // sortEmail();
+    showTeachers();
 }
 
-function sortName(sortBy) {
-    teachers.sort((a, b) => a[sortBy].localeCompare(b[sortBy]));
-    showTeachers();
+function sortName() {
+    teachers.sort((a, b) => a.name.localeCompare(b.name));
 }
 
 function sortEmail() {
     teachers.sort((a, b) => a.email.localeCompare(b.email));
-    showTeachers();
 }
 
 function showTeachers() {
