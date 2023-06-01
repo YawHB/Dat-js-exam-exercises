@@ -1,11 +1,11 @@
-const courses = [
+export const courses = [
     {
         name: "Introduction to Computer Science",
         startDate: "2023-09-01",
         endDate: "2024-01-31",
         ectsPoints: 10,
         maxStudents: 50,
-        teacher: "Peter Lind"
+        teacher: "Peter Lind",
     },
     {
         name: "Web Development",
@@ -13,7 +13,7 @@ const courses = [
         endDate: "2024-01-31",
         ectsPoints: 15,
         maxStudents: 40,
-        teacher: "Lars Hansen"
+        teacher: "Lars Hansen",
     },
     {
         name: "Mobile App Development",
@@ -21,7 +21,7 @@ const courses = [
         endDate: "2024-01-31",
         ectsPoints: 15,
         maxStudents: 40,
-        teacher: "Dan Madsen"
+        teacher: "Dan Madsen",
     },
     {
         name: "Database Systems",
@@ -29,7 +29,7 @@ const courses = [
         endDate: "2024-06-30",
         ectsPoints: 10,
         maxStudents: 30,
-        teacher: "Hanne Hansen"
+        teacher: "Hanne Hansen",
     },
     {
         name: "Artificial Intelligence",
@@ -37,6 +37,6 @@ const courses = [
         endDate: "2024-06-30",
         ectsPoints: 5,
         maxStudents: 20,
-        teacher: "Tine Jensen"
-    }
+        teacher: "Tine Jensen",
+    },
 ];
