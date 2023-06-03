@@ -16,13 +16,13 @@ async function fetchUsers() {
 
 function showUsers() {
     let admin = 0;
-    let user = 0;
+    let userx = 0;
     let guest = 0;
     for (const user of users) {
         if (user.role === "admin") {
             admin++;
         } else if (user.role === "user") {
-            user++;
+            userx++;
         } else if (user.role === "guest") {
             guest++;
         }
@@ -38,6 +38,6 @@ function showUsers() {
     }
 
     document.querySelector("#admin-count").textContent = admin;
-    document.querySelector("#user-count").textContent = user;
+    document.querySelector("#user-count").textContent = userx;
     document.querySelector("#guest-count").textContent = guest;
 }
