@@ -2,67 +2,51 @@
 
 window.addEventListener("load", start);
 
+let animals = [];
+
 function start() {
+    console.log();
     document
         .querySelector("#create-form")
-        .addEventListener("submit", userInputForm);
+        .addEventListener("submit", submitForm);
+    showAnimals();
 }
 
-//Del 1
+function createAnimal(name, type, age) {
+    const newAnimal = { name, type, age };
 
-function newAnimalObj(name, type, age) {
-    return {
-        name,
-        type,
-        age,
-    };
+    animals.push(newAnimal);
+    console.log(animals);
+    showAnimals();
 }
 
-//Del 2
-
-function userInputForm(event) {
+function submitForm(event) {
     event.preventDefault();
-
     const form = event.target;
 
     const name = form.animalName.value;
     const type = form.animalType.value;
     const age = form.animalAge.value;
 
-    const animalCreated = newAnimalObj(name, type, age);
-    allAnimals.push(animalCreated);
-    clearTableContent();
-    sortAnimals();
+    createAnimal(name, type, age);
 }
 
-let allAnimals = [];
+function showAnimals() {
+    animals.sort((a, b) => a.name.localeCompare(b.name));
+    document.querySelector("tbody").innerHTML = "";
+    for (const animal of animals) {
+        const html = /*html*/ `
+        
+        <tr>
 
-//Del 3
+        <td>${animal.name} </td>
+        <td>${animal.type} </td>
+        <td>${animal.age} </td>
 
-function clearTableContent() {
-    const tableBody = document.querySelector("#list-container table tbody");
-    tableBody.innerHTML = "";
-}
 
-function sortAnimals() {
-    const sortedByNAme = allAnimals.sort(sortByFirstName);
-    console.log(sortedByNAme);
-    sortedByNAme.forEach(displayAnimals);
-}
-
-function sortByFirstName(animal1, animal2) {
-    return animal1.name.localeCompare(animal2.name);
-}
-
-function displayAnimals(animal) {
-    const html = /*html*/ `
-
-    <td id="names-in-table">${animal.name}</td>
-    <td id="type-in-table"  >${animal.type}</td>
-    <td id="age-in-table" >${animal.age}</td>
-    `;
-
-    document
-        .querySelector("#list-container table tbody")
-        .insertAdjacentHTML("beforeend", html);
+        </tr>
+        
+        `;
+        document.querySelector("tbody").insertAdjacentHTML("beforeend", html);
+    }
 }
