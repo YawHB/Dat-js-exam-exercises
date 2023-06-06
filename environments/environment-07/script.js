@@ -33,7 +33,7 @@ function checkMail(email) {
     const navn = checkEmail[0];
     const domain = checkEmail[1];
 
-    if (navn < 4 || domain !== "stud.kea.dk") {
+    if (navn.length < 4 || domain !== "stud.kea.dk") {
         students.pop();
     }
 }
